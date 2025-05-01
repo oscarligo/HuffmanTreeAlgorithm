@@ -3,7 +3,7 @@ import java.util.HashMap;
 public class Main {
     public static void main(String[] args) {
     
-        Reader reader = new Reader();
+        ReaderAndWriter reader = new ReaderAndWriter();
         
         reader.readFile("input.txt");
 
@@ -24,9 +24,7 @@ public class Main {
             System.out.println( "'"+ c + "' " + huffmanCodes.get(c));
         }
 
-
         reader.writeHuffmanCodesAsAscii("CompressedFile.txt", huffmanCodes);
-
         reader.writeHuffmanCodesAsText("CompressedFile.txt","DecompressedFile.txt", huffmanCodes);
         
     }

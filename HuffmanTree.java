@@ -1,7 +1,11 @@
 import java.util.HashMap;
 import java.util.PriorityQueue;
 
-
+/**
+ * Clase que representa un árbol de Huffman.
+ * Contiene métodos para construir el árbol a partir de un mapa de frecuencias
+ * y para generar un mapa de códigos de Huffman.
+ */
 public class HuffmanTree {
 
 

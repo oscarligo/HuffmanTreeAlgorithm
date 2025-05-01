@@ -7,10 +7,11 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /**
- * Clase encargada de leer los caracteres de un archivo de texto y almacenarlos 
- * en un mapa con su respectiva frecuencia.
+ * Clase encargada de leer un archivo de texto, calcular la frecuencia de los caracteres
+ * y escribir el contenido en un archivo comprimido utilizando el algoritmo de Huffman.
+ * También permite descomprimir el archivo comprimido a su estado original.
  */
-public class Reader {
+public class ReaderAndWriter {
     
     private ArrayList<Character> charList; // Lista con los caracteres que hay en el archivo
     private HashMap<Character, Double> charPercentage; // Mapa de frecuencia de caracteres
@@ -18,7 +19,7 @@ public class Reader {
     /**
      * Constructor de la clase Reader.
      */
-    public Reader() {
+    public ReaderAndWriter() {
         charPercentage = new HashMap<>();
         charList = new ArrayList<>();
     }
