@@ -24,8 +24,8 @@ public class Main {
             System.out.println( "'"+ c + "' " + huffmanCodes.get(c));
         }
 
-        reader.writeHuffmanCodesAsAscii("CompressedFile.txt", huffmanCodes);
-        reader.writeHuffmanCodesAsText("CompressedFile.txt","DecompressedFile.txt", huffmanCodes);
+        reader.writeHuffmanCodesAsAscii("input.txt", huffmanCodes);
+        reader.writeHuffmanCodesAsText("input.txt","DecompressedFile.txt", huffmanCodes);
         
     }
 
